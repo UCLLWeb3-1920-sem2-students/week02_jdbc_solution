@@ -1,0 +1,16 @@
+CREATE TABLE web3.country
+(
+    name character varying COLLATE pg_catalog."default" NOT NULL,
+    capital character varying COLLATE pg_catalog."default",
+    inhabitants integer,
+    votes integer,
+    CONSTRAINT country_pkey PRIMARY KEY (name)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE web3.country
+    OWNER to u0015529;
+
